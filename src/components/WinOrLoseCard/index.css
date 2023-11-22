@@ -1,0 +1,128 @@
+/* Write your code here. */
+.Win-or-Lose-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff33;
+  border: 3px solid #ffffff30;
+  border-radius: 12px;
+  margin: auto;
+  padding: 16px;
+  width: 85%;
+}
+
+@media screen and (min-width: 768px) {
+  .Win-or-Lose-card {
+    width: 80%;
+    padding: 32px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Win-or-Lose-card {
+    flex-direction: row;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Win-or-Lose-card {
+    width: 60%;
+  }
+}
+
+.details-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  order: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .details-section {
+    order: 0;
+  }
+}
+
+.game-status {
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .game-status {
+    font-size: 64px;
+  }
+}
+
+.current-score-label {
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+@media screen and (min-width: 992px) {
+  .current-score-label {
+    font-size: 35px;
+  }
+}
+
+.current-score-value {
+  text-align: center;
+  font-family: roboto;
+  font-size: 35px;
+  color: #6a59ff;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .current-score-value {
+    font-size: 48px;
+  }
+}
+
+.play-again-button {
+  color: #3d3d3d;
+  font-family: roboto;
+  font-size: 16px;
+  background-color: #ffce27;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  padding: 16px;
+  margin: 16px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  order: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .image-container {
+    order: 1;
+  }
+}
+
+.win-or-lose-image {
+  width: 150px;
+  height: 200px;
+}
+
+@media screen and (min-width: 992px) {
+  .win-or-lose-image {
+    width: 350px;
+    height: 450px;
+  }
+}
